@@ -20,3 +20,23 @@ h2,
 p {
   margin: 0;
 }
+
+.blog-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem 4rem;
+}
+
+.blog-container {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  align-items: stretch;
+}
+
+.blog-grid--empty {
+  text-align: center;
+}
