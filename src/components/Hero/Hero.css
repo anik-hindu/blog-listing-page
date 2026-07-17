@@ -1,0 +1,80 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding-block: clamp(2rem, 8vw, 6rem);
+  padding-inline: clamp(0.5rem, 4vw, 1rem);
+
+  overflow: hidden;
+  position: relative;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(184, 137, 42, 0.18) 0%,
+      transparent 45%
+    ),
+    linear-gradient(180deg, #fdf9f3 0%, #f8f2e7 45%, #f7f3ed 100%);
+  border-bottom: 1px solid #e8ded2;
+}
+
+.hero__content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero__title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.5rem, 6vw, 4.75rem);
+  color: #b8892a;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.hero__divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero__divider span {
+  width: clamp(48px, 8vw, 80px);
+  height: 1px;
+  background-color: #b8892a;
+}
+
+.hero__divider img {
+  width: 24px;
+  filter: brightness(0) saturate(100%) invert(56%) sepia(90%) saturate(378%)
+    hue-rotate(359deg) brightness(91%) contrast(92%);
+}
+
+.hero__tagline {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: #2c4a3e;
+  font-weight: 500;
+}
+
+.hero__leaf {
+  width: clamp(180px, 16vw, 360px);
+  position: absolute;
+  bottom: -15px;
+  opacity: 0.15;
+  pointer-events: none;
+  user-select: none;
+  filter: brightness(0) saturate(100%) invert(56%) sepia(90%) saturate(378%)
+    hue-rotate(359deg) brightness(91%) contrast(92%);
+}
+
+.hero__leaf--left {
+  left: -25px;
+  transform: scaleX(-1);
+}
+
+.hero__leaf--right {
+  right: -25px;
+}
