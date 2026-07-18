@@ -19,9 +19,9 @@
   font-family: inherit;
   white-space: nowrap;
   padding: 0.75rem 1.5rem;
-  border: 1px solid #e8ded2;
+  border: 1px solid #b8892a;
   border-radius: 999px;
-  background: white;
+  background: transparent;
   color: #2c4a3e;
   font-weight: 500;
   cursor: pointer;
@@ -32,16 +32,20 @@
 }
 
 .category-btn.active-category {
-  background-color: #b8892a;
-  color: white;
+  background-color: #2c4a3e;
+  color: #f7f3ed;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(166, 122, 33, 0.25);
 }
 
 .category-btn:hover {
-  background-color: #f6eddc;
+  background-color: #f2e7d2;
+  border-color: #b8892a;
+  color: #2c4a3e;
 }
 
 .category-btn:focus-visible {
-  outline: 3px solid #b8892a;
+  outline: 3px solid #2c4a3e;
   outline-offset: 3px;
 }
 

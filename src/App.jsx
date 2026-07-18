@@ -15,6 +15,10 @@ function App() {
       ? blogPosts
       : blogPosts.filter((post) => post.category === category);
 
+  const sortedPosts = [...filteredPosts].sort(
+    (a, b) => new Date(a.publishedAt) - new Date(b.publishedAt),
+  );
+
   return (
     <>
       <Header />
@@ -28,7 +32,7 @@ function App() {
         <section className="blog-grid" aria-label="Blog articles">
           {filteredPosts.length > 0 ? (
             <div className="blog-container">
-              {filteredPosts.map((post) => (
+              {sortedPosts.map((post) => (
                 <BlogCard key={post.id} {...post} />
               ))}
             </div>

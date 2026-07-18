@@ -61,7 +61,7 @@ const blogPosts = [
 
   {
     id: 4,
-    category: "Lifestyle",
+    category: "Lifestyles",
     title: "Dinacharya: Five Daily Habits for Lasting Well-being",
     excerpt:
       "Small, consistent habits can transform your energy, digestion, sleep, and overall wellness. Start your journey with Ayurvedic daily routines.",

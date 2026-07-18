@@ -12,12 +12,7 @@ function BlogCard({ author, publishedAt, title, category, image, excerpt }) {
   return (
     <article className="blog-card">
       <div className="blog-card__image--wrapper">
-        <img
-          src={image.src}
-          loading="lazy"
-          alt={image.alt}
-          className="blog-card__image"
-        />
+        <img src={image.src} alt={image.alt} className="blog-card__image" />
       </div>
       <div className="blog-card__content">
         <span className="blog-card__category">{category}</span>
@@ -41,7 +36,7 @@ function BlogCard({ author, publishedAt, title, category, image, excerpt }) {
         </section>
         <p className="blog-card__excerpt">{excerpt}</p>
         <a href="#" className="blog-card__link">
-          Read More
+          <span>Read More</span>
           <img src="/icons/arrow-right.svg" alt="" aria-hidden="true" />
         </a>
       </div>

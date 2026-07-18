@@ -96,13 +96,9 @@
   transition: color 300ms ease;
 }
 
-.nav-links li a:hover,
-.nav-links li a.selected {
-  color: #b8892a;
-}
 
 .nav-links a.selected {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .nav-links li a::after {
