@@ -12,7 +12,13 @@ function BlogCard({ author, publishedAt, title, category, image, excerpt }) {
   return (
     <article className="blog-card">
       <div className="blog-card__image--wrapper">
-        <img src={image.src} alt={image.alt} className="blog-card__image" />
+        <img
+          src={image.src}
+          alt={image.alt}
+          fetchpriority="high"
+          loading="eager"
+          className="blog-card__image"
+        />
       </div>
       <div className="blog-card__content">
         <span className="blog-card__category">{category}</span>
