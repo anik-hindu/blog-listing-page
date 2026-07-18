@@ -15,7 +15,7 @@ function BlogCard({ author, publishedAt, title, category, image, excerpt }) {
         <img
           src={image.src}
           alt={image.alt}
-          fetchpriority="high"
+          fetchPriority="high"
           loading="eager"
           className="blog-card__image"
         />
